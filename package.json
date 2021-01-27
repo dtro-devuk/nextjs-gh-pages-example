@@ -1,0 +1,53 @@
+{
+  "homepage": "https://dtro-devuk.github.io/nextjs-gh-pages-example",
+  "name": "nextjs-gh-pages-example",
+  "description": "This example configures a simple Next 10 and Tailwind CSS styled app with routing for deployment to GitHub Pages repo",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "dtro-devuk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtro-devuk/nextjs-gh-pages-example"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:css": "tailwind build styles/global.css -o styles/site.css",
+    "deploy-local": "next build && next export && npx serve out",
+    "deploy-gp": "touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "start": "next start"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "semi": true,
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "next": "10.0.5",
+    "next-compose-plugins": "^2.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.0.2"
+  }
+}

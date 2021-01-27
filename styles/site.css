@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+@import './components/hamburgers.css';
+
+.content {
+  padding: 16px;
+}
+
+.sticky-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+@tailwind utilities;
