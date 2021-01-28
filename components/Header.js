@@ -16,18 +16,21 @@ const Header = ({ caption, author, description }) => {
               flex flex-col items-center text-center
               bg-gray-800"
     >
+      <NavBar author={author} />
       <div
-        className="p-3 font-black
-               text-2xl md:text-3xl lg:text-4xl
-               text-white"
+        className="p-3 font-extrabold md:font-black
+               text-lg md:text-3xl lg:text-4xl
+               text-white mb-4"
       >
         {caption || ''}
       </div>
-      <NavBar author={author} />
 
       <div className="bg-gray-300 w-full">
         <section aria-label="Demo description">
-          <h1 className="p-3 m-3 font-bold text-gray-700 italic font-sans text-xl text-center">
+          <h1
+            className="p-2 md:pt-10 font-bold text-gray-700 italic 
+            font-sans text-sm md:text-xl text-center"
+          >
             {description}
           </h1>
         </section>

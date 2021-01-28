@@ -4,11 +4,11 @@ const blog = () => {
   return (
     <Container>
       <div className="divide-y divide-gray-200 align-text-top max-w-4xl mx-auto mb-16">
-        <div className="pt-10 flex flex-col justify-center items-center mx-auto mb-16">
+        <div className="md:pt-10 flex flex-col justify-center items-center mx-auto mb-16">
           <h1
-            className="pb-10 text-3xl md:text-5xl text-center
-          text-gray-800 
-          font-bold leading-normal"
+            className="pb-5 text-lg md:text-3xl text-center
+                      text-blue-800 
+                      font-bold leading-normal"
           >
             Blog
           </h1>

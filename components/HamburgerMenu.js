@@ -8,7 +8,6 @@ import React from 'react';
 import NextLink from 'next/link';
 
 import { bool } from 'prop-types';
-import { string } from 'prop-types';
 
 const HamburgerMenu = ({ open, ...props }) => {
   const isHidden = open ? true : false;
@@ -32,7 +31,7 @@ const HamburgerMenu = ({ open, ...props }) => {
       >
         <NextLink href="/blog">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-lg
+            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
           text-yellow-500 hover:text-white lg:hover:bg-yellow-500 
           active:text-white focus:outline-none
           transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
@@ -43,7 +42,7 @@ const HamburgerMenu = ({ open, ...props }) => {
 
         <NextLink href="/about">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-lg
+            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
                 text-yellow-400 hover:text-white lg:hover:bg-yellow-500 
                 active:text-white focus:outline-none 
                 transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
@@ -54,7 +53,7 @@ const HamburgerMenu = ({ open, ...props }) => {
 
         <NextLink href="https://www.github.com/dtro-devuk">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-lg
+            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
                 text-yellow-500 hover:text-white lg:hover:bg-yellow-500 
                 active:text-yellow-600 focus:outline-none"
                 transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}

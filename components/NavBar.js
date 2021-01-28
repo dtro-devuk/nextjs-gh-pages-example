@@ -30,28 +30,30 @@ const NavBar = ({ author }) => {
         <nav
           id="navbar"
           role="navigation"
-          className="sticky-header w-full
-                    bg-gray-800 flex flex-wrap items-center justify-between mt-0 py-2"
+          className="container mx-auto px-4
+                    bg-gray-800 flex flex-wrap items-center justify-evenly 
+                    mt-4 md:py-2"
         >
-          <NextLink href="/">
-            <a className="inline-flex items-center p-2 w-auto cursor-pointer focus:outline-none">
-              <Avatar
-                className="h-14 w-14 rounded-full mr-2 md:h-20 md:w-20
+          <div className="md:p-2">
+            <NextLink href="/">
+              <a className="inline-flex items-center w-auto cursor-pointer focus:outline-none">
+                <Avatar
+                  className="h-12 w-12 rounded-full md:mr-2 md:h-20 md:w-20
                             border-4 border-white-200 
                             transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-500"
-              />
+                />
 
-              <span
-                className="p-3 font-bold italic
-              text-2xl md:text-3xl lg:text-4xl
-              text-blue-400"
-              >
-                @{author || ''}
-              </span>
-            </a>
-          </NextLink>
-
-          <div className="inline-flex my-2 pt-2 ml-auto sm:w-auto">
+                <span
+                  className="p-3 font-bold italic
+                      text-xl md:text-3xl lg:text-4xl
+                      text-blue-400"
+                >
+                  {author || ''}
+                </span>
+              </a>
+            </NextLink>
+          </div>
+          <div className="px-2 inline-flex md:my-2 ml-auto md:w-auto">
             <HamBurger open={open} setOpen={setOpen} aria-controls={menuId} />
           </div>
           <HamBurgerMenu open={open} setOpen={setOpen} id={menuId} />

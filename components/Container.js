@@ -9,10 +9,10 @@ import Head from '@/components/Head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export const description =
-  'This example configures a simple Next10 and Tailwind CSS app with routing for deployment to GitHub Pages repository.';
-export const siteTitle = 'Next 10, Tailwind App deployed to GitHub pages example';
+export const siteTitle = 'A simple Next 10, Tailwind CSS app deployed to GitHub Project pages';
 export const profileName = 'dtro-devuk';
+export const description =
+  'This demo shows a simple Next 10 app with routing deployed as static html to GitHub Pages.';
 
 const Container = ({ children }) => {
   return (
@@ -23,7 +23,11 @@ const Container = ({ children }) => {
         id="main-content"
         role="main"
         aria-label="main content area for the page"
-        className="flex-1 p-3 overflow-y-hidden justify-center bg-white"
+        className="flex-1 p-3 overflow-y-hidden justify-center 
+        mx-2 sm:my-12 sm:text-sm
+        md:mx-8 
+        leading-relaxed
+        bg-white text-gray-700"
       >
         {children}
       </main>

@@ -15,9 +15,9 @@ const Footer = ({ caption, author }) => {
             flex flex-col items-center text-center 
             bg-gray-800 "
     >
-      <div className="text-white">
-        <p className=" text-xl md:text-1xl lg:text-2xl p-3">{caption || ''}</p>
-        <p className=" text-xl md:text-1xl lg:text-2xl p-3">
+      <div className="text-white text-sm md:text-1xl lg:text-2xl p-3">
+        <p>{caption || ''}</p>
+        <p>
           Copyright <span dangerouslySetInnerHTML={{ __html: '&copy;' }}></span>{' '}
           <a
             href="https://www.github.com/dtro-devuk"
