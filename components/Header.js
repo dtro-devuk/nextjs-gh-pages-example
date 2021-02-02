@@ -12,15 +12,15 @@ const Header = ({ caption, author, description }) => {
     <header
       id="header"
       role="banner"
-      className="sticky-header
-              flex flex-col items-center text-center
-              bg-gray-800"
+      className="sticky-header 
+              bg-gray-800
+              text-center"
     >
       <NavBar author={author} />
       <div
-        className="p-3 font-extrabold md:font-black
+        className="px-4 pb-5 font-extrabold md:font-black
                text-lg md:text-3xl lg:text-4xl
-               text-white mb-4"
+               text-white "
       >
         {caption || ''}
       </div>
@@ -28,7 +28,7 @@ const Header = ({ caption, author, description }) => {
       <div className="bg-gray-300 w-full">
         <section aria-label="Demo description">
           <h1
-            className="p-2 md:pt-10 font-bold text-gray-700 italic 
+            className="md:pt-5 font-bold text-gray-700 italic 
             font-sans text-sm md:text-xl text-center"
           >
             {description}

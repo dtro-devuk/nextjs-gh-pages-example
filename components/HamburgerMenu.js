@@ -16,7 +16,7 @@ const HamburgerMenu = ({ open, ...props }) => {
   return (
     <div
       aria-hidden={!isHidden}
-      className={`mt-2 w-full lg:inline-flex lg:flex-grow lg:w-auto 
+      className={`block mt-2 w-full lg:inline-flex lg:flex-grow lg:w-auto 
     ${!isHidden ? 'hidden' : ''}`}
     >
       <div
@@ -31,10 +31,13 @@ const HamburgerMenu = ({ open, ...props }) => {
       >
         <NextLink href="/blog">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
-          text-yellow-500 hover:text-white lg:hover:bg-yellow-500 
-          active:text-white focus:outline-none
-          transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
+            className={`block w-full py-1
+             md:px-3 md:py-2 rounded md:text-lg
+            text-yellow-500 
+            hover:text-white hover:bg-gray-500
+            lg:hover:bg-yellow-500 
+            active:text-white focus:outline-none
+            transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
           >
             Blog
           </a>
@@ -42,8 +45,11 @@ const HamburgerMenu = ({ open, ...props }) => {
 
         <NextLink href="/about">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
-                text-yellow-400 hover:text-white lg:hover:bg-yellow-500 
+            className={`block mt-1 w-full py-2
+                md:px-3 md:py-2 rounded md:text-lg
+                text-yellow-400 
+                hover:text-white hover:bg-gray-500
+                lg:hover:bg-yellow-500 
                 active:text-white focus:outline-none 
                 transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
           >
@@ -53,9 +59,12 @@ const HamburgerMenu = ({ open, ...props }) => {
 
         <NextLink href="https://www.github.com/dtro-devuk">
           <a
-            className={`lg:inline-flex lg:w-auto w-full px-3 py-2 rounded md:text-lg
-                text-yellow-500 hover:text-white lg:hover:bg-yellow-500 
-                active:text-yellow-600 focus:outline-none"
+            className={`block mt-1 w-full py-2
+                md:px-3 md:py-2 rounded md:text-lg
+                text-yellow-500 
+                hover:text-white hover:bg-gray-500
+                lg:hover:bg-yellow-500 
+                active:text-white focus:outline-none"
                 transform ${'hover:scale-x-90 transition ease-in-out duration-500'}`}
             target="_blank"
             rel="noopener noreferrer"

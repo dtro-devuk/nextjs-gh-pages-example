@@ -14,5 +14,18 @@ module.exports = withPlugins([
     env,
     basePath,
     assetPrefix,
+
+    webpack: (config) => {
+      // Support SVG loading https://stackoverflow.com/a/55180310
+      config.module.rules.push({
+        test: /\.svg$/,
+        issuer: {
+          test: /\.(js|ts)x?$/,
+        },
+        use: ['@svgr/webpack'],
+      });
+
+      return config;
+    },
   },
 ]);

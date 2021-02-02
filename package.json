@@ -10,8 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dtro-devuk/nextjs-gh-pages-example"
+    "url": "https://github.com/dtro-devuk/nextjs-gh-pages-example"
   },
+  "engines": {
+		"node": "14.15.0"
+	},
   "browserslist": [
     ">0.3%",
     "not ie 11",

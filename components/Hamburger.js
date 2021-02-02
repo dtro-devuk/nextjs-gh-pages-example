@@ -31,11 +31,13 @@ const Hamburger = ({ open, setOpen, ...props }) => {
   return (
     <button
       className={`hamburger--spring-r ${open ? 'is-active' : ''}
-            p-1 md:p-3 ml-3 mr-3 
+            fill-current
+            md:p-3 ml-3 mr-4 
             lg:hidden lg:ml-0 lg:w-0 
-            text-yellow-500 hover:text-white             
+            text-gray-300 hover:text-yellow-500             
             rounded
             transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-500
+            focus:text-white
             focus:outline-none`}
       id="hamburger-btn"
       aria-label="Hamburger Menu Toggle Button"

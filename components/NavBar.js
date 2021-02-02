@@ -30,9 +30,11 @@ const NavBar = ({ author }) => {
         <nav
           id="navbar"
           role="navigation"
-          className="container mx-auto px-4
-                    bg-gray-800 flex flex-wrap items-center justify-evenly 
-                    mt-4 md:py-2"
+          className="mx-auto 
+                    px-4 py-3
+                    flex items-center justify-between
+                    bg-gray-800 flex-wrap 
+                    md:py-2"
         >
           <div className="md:p-2">
             <NextLink href="/">
@@ -53,7 +55,7 @@ const NavBar = ({ author }) => {
               </a>
             </NextLink>
           </div>
-          <div className="px-2 inline-flex md:my-2 ml-auto md:w-auto">
+          <div className="block md:my-2 ml-auto md:w-auto">
             <HamBurger open={open} setOpen={setOpen} aria-controls={menuId} />
           </div>
           <HamBurgerMenu open={open} setOpen={setOpen} id={menuId} />
