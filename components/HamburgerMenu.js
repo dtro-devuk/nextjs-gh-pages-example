@@ -3,11 +3,12 @@
  * @description Opens and Close based on properties passed from the associated Hamburger Toggle Button, see Hamburger.js
  * @author dtro-devuk @github:dtro-devuk.io
  */
-
 import React from 'react';
 import NextLink from 'next/link';
 
 import { bool } from 'prop-types';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HamburgerMenu = ({ open, ...props }) => {
   const isHidden = open ? true : false;
@@ -69,7 +70,11 @@ const HamburgerMenu = ({ open, ...props }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            <FontAwesomeIcon
+              icon={['fab', 'github']}
+              size="lg"
+              className="text-white text-center"
+            />
           </a>
         </NextLink>
       </div>

@@ -13,8 +13,8 @@
     "url": "https://github.com/dtro-devuk/nextjs-gh-pages-example"
   },
   "engines": {
-		"node": "14.15.0"
-	},
+    "node": "14.15.0"
+  },
   "browserslist": [
     ">0.3%",
     "not ie 11",
@@ -40,6 +40,11 @@
     "bracketSpacing": true
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "next": "10.0.5",
     "next-compose-plugins": "^2.2.0",
     "react": "17.0.1",
